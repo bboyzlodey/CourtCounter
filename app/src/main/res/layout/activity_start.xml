@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="15dp">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@android:color/black"
+		android:text="Please, give name for home command:"
+		android:id="@+id/first"
+		android:layout_marginTop="15dp"
+		/>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="TeamA"
+		android:id="@+id/name_team_a"
+		android:layout_below="@id/first"
+		android:imeOptions="actionNext"
+		android:singleLine="true"
+		android:inputType="textCapWords"
+		/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Please, give name for guest command:"
+		android:textColor="@android:color/black"
+		android:id="@+id/second"
+		android:layout_below="@id/name_team_a"
+		android:layout_marginTop="15dp"
+		/>
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="TeamA"
+		android:id="@+id/name_team_b"
+		android:layout_below="@id/second"
+		android:imeOptions="actionDone"
+		android:singleLine="true"
+		android:inputType="textCapWords"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/new_game"
+		android:text="new game"
+		android:layout_margin="15dp"
+		android:background="@color/orange"
+		android:textSize="40sp"
+		android:layout_alignParentBottom="true"
+		/>
+
+</RelativeLayout>
