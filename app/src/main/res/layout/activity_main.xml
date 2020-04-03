@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scaleType="centerCrop"
+		android:src="@drawable/thirst_picture"/>
+
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
 	tools:context=".MainActivity"
 	android:layout_margin="10dp"
-	tools:background="@color/colorAccent"
+	tools:background=""
 	android:orientation="vertical"
 	android:layout_weight="1"
 	android:visibility="gone"
@@ -33,19 +45,21 @@
 				android:text="Team A"
 				android:layout_gravity="center"
 				android:layout_margin="15dp"
-				android:textColor="@android:color/black"/>
+				android:textColor="@android:color/white" />
 		<TextView
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			tools:text="75"
 			android:id="@+id/score_team_a"
 			android:text="0"
+			android:textColor="@color/orange"
 			android:layout_gravity="center"
 			android:layout_margin="15dp"
 			android:textSize="40sp"/>
 			<Button
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:layout_marginTop="15dp"
 				android:text="+3 points"
 				android:id="@+id/three_points_team_a"
 				android:layout_gravity="center"/>
@@ -67,7 +81,8 @@
 			android:layout_width="6dp"
 			android:layout_height="match_parent"
 			android:layout_weight="0"
-			android:background="@android:color/black"/>
+			android:background="@android:color/white"
+			android:alpha="0.3"/>
 		<LinearLayout
 			android:layout_width="wrap_content"
 			android:layout_height="match_parent"
@@ -81,7 +96,7 @@
 				android:text="Team B"
 				android:layout_gravity="center"
 				android:layout_margin="15dp"
-				android:textColor="@android:color/black"
+				android:textColor="@android:color/white"
 				/>
 			<TextView
 				android:layout_width="wrap_content"
@@ -89,11 +104,13 @@
 				tools:text="50"
 				android:id="@+id/score_team_b"
 				android:text="0"
+				android:textColor="@color/orange"
 				android:layout_gravity="center"
 				android:layout_margin="15dp"
 				android:textSize="40sp"/>
 
 			<Button
+				android:layout_marginTop="15dp"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:text="+3 points"
@@ -123,3 +140,4 @@
 		android:onClick="endGame"/>
 
 </LinearLayout>
+</RelativeLayout>
