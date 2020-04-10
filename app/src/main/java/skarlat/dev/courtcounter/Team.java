@@ -1,6 +1,8 @@
 package skarlat.dev.courtcounter;
 
-public class Team {
+import java.io.Serializable;
+
+public class Team implements Serializable {
 	String  teamName;
 	int     points;
 	public      Team(){
