@@ -37,25 +37,29 @@
 			android:layout_height="match_parent"
 			android:orientation="vertical"
 			android:layout_weight="1">
+
 			<TextView
+				android:id="@+id/team_a"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				tools:text="Team A"
-				android:id="@+id/team_a"
-				android:text="Team A"
 				android:layout_gravity="center"
 				android:layout_margin="15dp"
-				android:textColor="@android:color/white" />
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			tools:text="75"
-			android:id="@+id/score_team_a"
-			android:text="0"
-			android:textColor="@color/orange"
-			android:layout_gravity="center"
-			android:layout_margin="15dp"
-			android:textSize="40sp"/>
+				android:fontFamily="sans-serif-medium"
+				android:text="Team A"
+				android:textColor="@android:color/white"
+				tools:text="Team A" />
+
+			<TextView
+				android:id="@+id/score_team_a"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_margin="15dp"
+				android:fontFamily="sans-serif-light"
+				android:text="0"
+				android:textColor="@color/orange"
+				android:textSize="56sp"
+				tools:text="75" />
 			<Button
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
@@ -88,26 +92,30 @@
 			android:layout_height="match_parent"
 			android:orientation="vertical"
 			android:layout_weight="1">
+
 			<TextView
+				android:id="@+id/team_b"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				tools:text="Team B"
-				android:id="@+id/team_b"
-				android:text="Team B"
 				android:layout_gravity="center"
 				android:layout_margin="15dp"
+				android:fontFamily="sans-serif-medium"
+				android:text="Team B"
 				android:textColor="@android:color/white"
-				/>
+				tools:text="Team B" />
+
 			<TextView
+				android:id="@+id/score_team_b"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				tools:text="50"
-				android:id="@+id/score_team_b"
+				android:layout_gravity="center"
+				android:layout_margin="15dp"
+				android:fontFamily="sans-serif-light"
+
 				android:text="0"
 				android:textColor="@color/orange"
-				android:layout_gravity="center"
-				android:layout_margin="15dp"
-				android:textSize="40sp"/>
+				android:textSize="56sp"
+				tools:text="50" />
 
 			<Button
 				android:layout_marginTop="15dp"
