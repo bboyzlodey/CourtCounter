@@ -1,5 +1,5 @@
 # CourtCounter
-Counter for bascketball game.<br>
+Counter for basketball game.<br>
 *Project not finished.*
 
 ## Preview
